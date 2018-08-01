@@ -1,0 +1,6 @@
+msgid ""
+msgstr ""
+
+msgctxt "#32000"
+msgid "Get [COLOR red]IPTVXtra Media[/COLOR] Info"
+msgstr ""

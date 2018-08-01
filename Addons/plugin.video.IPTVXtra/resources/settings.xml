@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+
+    <category label="Main">
+     	<setting label="EPG  Source >" type="action" action="XBMC.RunPlugin(plugin://plugin.video.IPTVXtra/?mode=epg_init)" id="epg_src" default="https://raw.githubusercontent.com/kens13/EPG/master/guide_ks.xml" />
+   	 	<setting type="sep"/>
+    	<setting label="Server/Portal >" type="action" action="XBMC.RunPlugin(plugin://plugin.video.IPTVXtra/?mode=portal)" id="portal" default="" />
+   	 	<setting label="Donation# >" type="text" id="donation" default="" />
+    </category>
+
+    <category label="VOD">
+   	 	<setting label="Language  Filter  Enabled?" type="bool" id="filter_lang" default="true" />
+   	 	<setting label="[VOD] Genre  Filter  Enabled?" type="bool" id="filter_genre" default="true" />
+   	 	<setting type="sep"/>
+    </category>
+
+    <category label="Misc">
+     	<setting type="sep"/>
+     	<setting label="" type="action" action="" />
+    	<setting label="Local  TimeZone ?" type="action" action="XBMC.RunPlugin(plugin://plugin.video.IPTVXtra/?mode=timezone)" id="tzone" enable="false" default="" visible="false" />
+    	<setting label="MAC:  Prefix ?" type="action" action="XBMC.RunPlugin(plugin://plugin.video.IPTVXtra/?mode=mac_prefix)" id="mac_prefix" enable="false" default="" visible="false" />
+   	 	<setting label="MAC:  Last 3 ?" type="text" id="mac_last" enable="false" default="" visible="false" />		
+   	 	<setting label="MAC Based  Account ?" type="bool" id="mac_based" default="true" visible="false" />
+        <setting label="VOD:  Pages Limit ?" type="number" id="vodpages" enable="false" default="666" visible="false" />			
+    	<setting label="Adult Contents:  HIDDEN ?" type="action" action="" id="adult_hide" default="[COLOR lime]YES[/COLOR]" visible="false" />
+    	<setting label="Adult Contents:  Password  PROTECTED ?" type="action" action="" id="adult_protect" default="[COLOR lime]YES[/COLOR]" visible="false" />
+    	<setting label="Click  [COLOR yellow]HERE[/COLOR]  to change" type="action" action="XBMC.RunPlugin(plugin://plugin.video.IPTVXtra/?mode=adult_set)" visible="false" />
+    	<setting label="Password" type="action" action="" id="adult_key" default="2f6b07074142c32190bc0a026c966cb2" visible="false" />
+   	 	<setting label="Playlist  Reference ?" type="enum" id="link_ref" values="Static  Links|Dynamic  Links" default="0" enable="false" visible="false" />
+       	<setting label="Server's Port # ?" type="number" id="server_port" default="8899" visible="false" />
+    	<setting label="Server:  START" type="action" visible="false" action="XBMC.RunPlugin(plugin://plugin.video.IPTVXtra/?mode=server&action=start)" />
+    	<setting label="Server:  STOP" type="action" visible="false" action="XBMC.RunPlugin(plugin://plugin.video.IPTVXtra/?mode=server&action=stop)" />
+    	<setting label="Server:  STATUS" type="action" visible="false" action="XBMC.RunPlugin(plugin://plugin.video.IPTVXtra/?mode=server&action=check)" />		
+		<setting label="Credits to [COLOR yellow]kens, CouchPotato[/COLOR] @ [COLOR blue]IPTV Forums[/COLOR]  for their Support" type="action" action="" />
+ </category>
+
+</settings>
