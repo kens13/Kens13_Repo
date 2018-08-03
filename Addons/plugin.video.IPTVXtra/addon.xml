@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.IPTVXtra" name="IPTV Xtra" version="2.2.2" provider-name="/kens">
     <requires>
-        <import addon="context.IPTVXtra.mediainfo" version="1.4.0"/>	
 		<import addon="xbmc.python" version="2.14.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="addon.py">
