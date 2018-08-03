@@ -165,7 +165,6 @@ def m3u_read(fcat, fchannel, fvod, fadult):
             adult.append([name, icon, url, cat])
         elif ('/movie/' in url.lower()) and (cat.lower() != 'for adults'):
             vod.append([name, icon, url, cat])
-            write_stream_data(name, icon, url, cat)
         else:
             channels.append([num, name, id, cat, icon, url, tmp])
             if cat not in cats: cats.append(cat)
@@ -180,15 +179,3 @@ def m3u_read(fcat, fchannel, fvod, fadult):
     m3u_create()
     
     return [cats, channels, vod, adult]
-
-def write_stream_data(name, icon, url, cat):
-try: epg = json.loads(urllib2.urlopen(url).read())
-    strmFile = cat + '/' + name + '.strm'
-#    strmFile = unidecode(strmFile)
-    strmFilePath = os.path.join(strm_dir, strmFile)
-    chanData = url + ' >' + name
-
-    with open(strmFilePath, "w") as strmFp:
-        strmFp.write(chanData)
-    return
-    
