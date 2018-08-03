@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<<<<<<< HEAD
 <addon id="context.IPTVXtra.mediainfo" name="Media Info" version="1.0.0" provider-name="/kens">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -22,10 +22,32 @@
     <source></source>
   </extension>
 </addon>
+=======
+<addon id="context.IPTVXtra.mediainfo" name="IPTVXtra Media Info" version="1.0.0" provider-name="/kens">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.simplejson" version="2.0.10"/>
+    <import addon="script.extendedinfo" version="2.0.6"/>
+  </requires>
+  <extension point="kodi.context.item" library="default.py">
+    <item>
+      <label>32000</label>
+      <visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)|Pvr.HasTVChannels</visible>
+    </item>
+  </extension>
+  <extension point="kodi.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Get Media Info for Addons & PVR</summary>
+    <description lang="en">Get Media Info for Addons & PVR</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <forum></forum>
+    <source></source>
+  </extension>
+</addon>
+>>>>>>> af66c0f16a49c55de80b1cd1bd70bd3a71a37c50
 
 <addon id="plugin.video.IPTVXtra" name="IPTV Xtra" version="2.2.2" provider-name="/kens">
     <requires>
-        <import addon="context.IPTVXtra.mediainfo" version="1.0.0"/>
 		<import addon="xbmc.python" version="2.14.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="addon.py">
@@ -68,75 +90,3 @@
 	</extension>
 </addon>
 </addons>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<addons>
-<addon id="context.IPTVXtra.mediainfo" name="IPTVXtra Media Info" version="1.0.0" provider-name="/kens">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.simplejson" version="2.0.10"/>
-    <import addon="script.extendedinfo" version="2.0.6"/>
-  </requires>
-  <extension point="kodi.context.item" library="default.py">
-    <item>
-      <label>32000</label>
-      <visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)|Pvr.HasTVChannels</visible>
-    </item>
-  </extension>
-  <extension point="kodi.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Get Media Info for Addons/PVR</summary>
-    <description lang="en">Get Media Info for Addons/PVR</description>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <forum></forum>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="plugin.video.IPTVXtra" name="IPTV Xtra" version="2.2.2" provider-name="/kens">
-    <requires>
-        <import addon="context.IPTVXtra.mediainfo" version="1.4.0"/>
-		<import addon="xbmc.python" version="2.14.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="server.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">IPTV Xtra</summary>
-		<description lang="en">An unofficial video addon to connect to IPTV Services, based on original code by esxbr.
-		1.Open IPTV Xtra.
-		2.Click "Open IPTVXtra Settings".
-		3.Select your Servers Portal, enter your Donation#, Select EPG Source(Default is kens).
-		4.Enable Language and Genre Filters.(if Req'd.)
-		5.Save your Settings.
-		*.IPTV is an "Alternate" method to access TV.
-		*.VOD is to access VOD Features.
-		6.Click VOD or IPTV (This will load your data from the Server).
-		7.Click Auto-Setup PVR IPTV Simple.
-		* PVR Client is already Enabled.  Click "TV" on Home Screen.
-		Enjoy.
-		/kens</description>
-		<license>GNU General Public License, v2</license>
-		<language></language>
-		<forum>https://iptvextra.wixsite.com/iptv-extra</forum>
-	</extension>
-</addon>
-
-<addon id="repository.Kens13" name="Kens Kodi Repository" version="1.0.0" provider-name="/kens">
-	<extension point="xbmc.addon.repository" name="Kens Kodi Repository">
-	    <dir minversion="13.0.0">
-		    <info compressed="false">https://raw.githubusercontent.com/kens13/Kens13_Repo/master/Addons/addons.xml</info>
-		    <checksum>https://raw.githubusercontent.com/kens13/Kens13_Repo/master/Addons/addons.xml.md5</checksum>
-		    <datadir zip="true">https://github.com/kens13/Kens13_Repo/raw/master/Addons/zip</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Install add-ons by Kens Kodi Repository</summary>
-		<description>Download and install add-ons from /kens</description>
-		<disclaimer>Add-ons for home usage in Kodi</disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-</addons>
->>>>>>> af66c0f16a49c55de80b1cd1bd70bd3a71a37c50
