@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="context.IPTVXtra.mediainfo" name="Media Info" version="1.4.0" provider-name="kens/dandy">
+<addon id="context.IPTVXtra.mediainfo" name="IPTVXtra Media Info" version="1.0.0" provider-name="/kens">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.simplejson" version="2.0.10"/>
@@ -14,8 +14,8 @@
   </extension>
   <extension point="kodi.addon.metadata">
     <platform>all</platform>
-    <summary lang="en">Open Media Info by current Item</summary>
-    <description lang="en">Open Media Info by current Item</description>
+    <summary lang="en">Get Media Info for Addons/PVR</summary>
+    <description lang="en">Get Media Info for Addons/PVR</description>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
     <forum></forum>
     <source></source>
@@ -53,16 +53,12 @@
 	</extension>
 </addon>
 
-<addon id="repository.Kens13" name="Kens Kodi Repository" version="1.0.0" provider-name="kens">
-        <requires>
-                <import addon="xbmc.addon" version="13.0.0"/>
-        </requires>
+<addon id="repository.Kens13" name="Kens Kodi Repository" version="1.0.0" provider-name="/kens">
 	<extension point="xbmc.addon.repository" name="Kens Kodi Repository">
 	    <dir minversion="13.0.0">
 		    <info compressed="false">https://raw.githubusercontent.com/kens13/Kens13_Repo/master/Addons/addons.xml</info>
 		    <checksum>https://raw.githubusercontent.com/kens13/Kens13_Repo/master/Addons/addons.xml.md5</checksum>
-		    <datadir zip="true">https://github.com/kens13/Kens13_Repo/tree/master/Addons/zip/</datadir>
-		</dir>
+		    <datadir zip="true">https://github.com/kens13/Kens13_Repo/raw/master/Addons/zip</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Install add-ons by Kens Kodi Repository</summary>
