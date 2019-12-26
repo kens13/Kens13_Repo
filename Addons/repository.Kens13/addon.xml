@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.Kens13" name="Kens Kodi Repository" version="1.0.0" provider-name="kens">
+<addon id="repository.Kens13" name="Kens Kodi Repository" version="1.1.0" provider-name="kens">
 	<extension point="xbmc.addon.repository" name="Kens Kodi Repository">
 		<info compressed="false">https://raw.githubusercontent.com/kens13/Kens13_Repo/master/Addons/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/kens13/Kens13_Repo/master/Addons/addons.xml.md5</checksum>
