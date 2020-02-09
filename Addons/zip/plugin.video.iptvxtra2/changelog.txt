@@ -6,4 +6,4 @@ Lots of fixes/ additions
 .
 2.5 Public Release 02/19/2019
 7.8 Add p6 server
-7.9 fixed sources.xml install error -Android
+8.1 Add .ru domain servers
