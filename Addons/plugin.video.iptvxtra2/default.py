@@ -566,7 +566,7 @@ def passpopup():
 
 def portpopup():
     dialog = xbmcgui.Dialog()
-    entries = ["http://p1.iptvrocket.tv", "http://p2.iptvrocket.tv", "http://s1.iptv66.tv", "http://s2.iptv66.tv", "http://p1.iptvprivateserver.tv", "http://p2.iptvprivateserver.tv", "http://p3.iptvprivateserver.tv", "http://p4.iptvprivateserver.tv", "http://p5.iptvprivateserver.tv", "http://p6.iptvprivateserver.tv"]
+    entries = ["http://p1.iptvrocket.tv", "http://p2.iptvrocket.tv", "http://s1.iptv66.tv", "http://s2.iptv66.tv", "http://p1.iptvprivateserver.tv", "http://p2.iptvprivateserver.tv", "http://p3.iptvprivateserver.tv", "http://p4.iptvprivateserver.tv", "http://p5.iptvprivateserver.tv", "http://p6.iptvprivateserver.tv", "http://p1.iptvrocket.ru", "http://p2.iptvrocket.ru", "http://s1.iptv66.ru", "http://s2.iptv66.ru", "http://p1.iptvprivateserver.ru", "http://p2.iptvprivateserver.ru", "http://p3.iptvprivateserver.ru", "http://p4.iptvprivateserver.ru", "http://p5.iptvprivateserver.ru", "http://p6.iptvprivateserver.ru"]
     nr = dialog.select("Select your Server/ Portal", entries)
     if nr>=0:
         text = entries[nr]
