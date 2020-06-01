@@ -1,0 +1,41 @@
+<playercorefactory>
+        <players>
+                <player name="MXPlayerFree" type="ExternalPlayer" audio="false" video="true">
+                        <filename>com.mxtech.videoplayer.ad</filename>
+                        <hidexbmc>true</hidexbmc>
+                        <playcountminimumtime>120</playcountminimumtime>
+                </player>
+
+                <player name="MXPlayerShowKodi" type="ExternalPlayer" audio="false" video="true">
+                        <filename>com.mxtech.videoplayer.ad</filename>
+                        <hidexbmc>false</hidexbmc>
+                        <playcountminimumtime>120</playcountminimumtime>
+                </player>
+
+                <player name="MXPlayerPro" type="ExternalPlayer" audio="false" video="true">
+                        <filename>com.mxtech.videoplayer.pro</filename>
+                        <hidexbmc>true</hidexbmc>
+                        <playcountminimumtime>120</playcountminimumtime>
+                </player>
+
+                <player name="VLCPlayer" type="ExternalPlayer" audio="false" video="true">
+                        <filename>com.vlcforandroid.vlcdirectprofree</filename>
+                        <hidexbmc>true</hidexbmc>
+                        <playcountminimumtime>120</playcountminimumtime>
+                </player>
+        </players>
+        <rules action="prepend">
+<!---
+**********                   **********
+********** EDIT THIS SECTION **********
+**********                   **********
+-->
+                <rule protocols="smb" player="MXPlayerFree" />
+                <rule dvdimage="true" player="MXPlayerFree"/>
+                <rule protocols="rtmp" player="MXPlayerFree"/>
+                <rule protocols="rtsp" player="MXPlayerFree" />
+                <rule protocols="sop" player="MXPlayerFree" />
+<!-- Defaul               <rule internetstream="true" player="dvdplayer" />sted -->
+                <rule video="true" player="MXPlayerFree"/><!-- Default for anything else not listed -->
+        </rules>
+</playercorefactory>

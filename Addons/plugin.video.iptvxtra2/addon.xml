@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.iptvxtra2"
        name="IPTVXtra II"
-       version="8.1"
+       version="16.0"
        provider-name="/kens">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -16,7 +16,17 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">IPTVXtra II - for Kodi v18</summary>
     <language>en</language>
-    <description lang="en">The 2nd. Generation</description>
+    <news>ver16.0 (06/01/2020)
+      [new]
+      *Merge EPG -Combines Alternate and Provider EPG into a more robust Guide.
+      *PPV selections are available in there own Section.
+      *Ability to see only new VOD and PPV's since your last Update.
+      *Ability to Enable a pre-configured Ext.Player file for MX Player -Android(free version). *This fixes Video playback stuttering for all Videos (Live TV still uses Kodi default player).
+      *Get Quick information for all VOD items.
+      *Play Trailers for all VOD and PPV items.
+      *** Overall quicker and easier to use!
+    </news>
+    <description lang="en">Ver 16.0 - The Last Update before the rewrite for Kodi v19, incorporating many of the features of the next version.</description>
      <platform>all</platform>
   </extension>
 </addon>

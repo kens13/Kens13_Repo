@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  kens - version 1.06 Std.Version (Win/Linux/iOS)for PVR.Stalker LiveTV/Video & for PVR.IPTV Simple Client with Couch Potato VOD  Remote functionality :                               -->
+<!--  Button Ids:                                                                             -->
+<!--  *** IPTV Live TV  (Functions only in Full Screen while no OSD Visible)                  -->                                                    
+<!--    0: left   (1 Click - returns to last ch.)
+			  (LongPress - TV Ch. Keypad Dialog)         -->
+<!--    1: right  (1 Click - Back/Previous Menu/or Ch.List/EPG)                                         			  (LongPress - OSD OnScreen Display)         -->
+<!--    2: middle (Stops Ch./ Stops "Working..." "Death Spin" 
+			(wheel scrolls Full Page up/dn in EPG and Ch.List)
+			(wheel is Volume up/down while in full Screen TV)-->
+<!--	Mouse movement functions are cancelled until OSD is Displayed-->
+
+<!--  *** IPTV VOD/Video (Functions only in Full Screen while no OSD Visible)                  -->                                                    
+<!--    0: left   (1 Click - Pause/Resume Video)-->
+<!--    1: right  (1 Click - OSD OnScreen Display)   -->
+<!--    2: middle (Stops Video)-->
+<!--			  (wheel scrolls Timeline while OSD displayed)-->
+<!--			  (wheel is Volume up/down while in full Screen)-->
+<!--	Mouse movement functions are cancelled until OSD is Displayed-->
+
+<keymap>
+  <global>
+    <mouse>
+      <leftclick>leftclick</leftclick>
+      <rightclick>rightclick</rightclick>
+      <middleclick>Stop</middleclick>
+      <doubleclick id="0">doubleclick</doubleclick>
+      <longclick id="0">contextmenu</longclick>
+
+      <wheeldown>wheeldown</wheeldown>
+      <wheelup>wheelup</wheelup>
+      <mousedrag>mousedrag</mousedrag>
+      <mousemove>mousemove</mousemove>
+    </mouse>
+  </global>
+  <tvguide>
+    <mouse>
+      <wheelup>PageUp</wheelup>
+      <wheeldown>PageDown</wheeldown>
+    </mouse>
+  </tvguide>
+  <tvchannels>
+    <mouse>
+      <wheelup>PageUp</wheelup>
+      <wheeldown>PageDown</wheeldown>
+ 	 <longclick id="0">Number1</longclick>
+    </mouse>
+  </tvchannels>
+  <FullscreenLiveTV>
+    <mouse>
+      <leftclick>Number0</leftclick>
+      <rightclick>PreviousMenu</rightclick>
+ 	 <longclick id="0">Number1</longclick>
+      <longclick id="1">OSD</longclick>
+      <mousemove>noop</mousemove>
+      <wheeldown>VolumeDown</wheeldown>
+      <wheelup>VolumeUp</wheelup>
+     </mouse>
+  </FullscreenLiveTV>
+<FullscreenVideo>
+    <mouse>
+      <leftclick>Pause</leftclick>
+      <rightclick>OSD</rightclick>
+      <mousemove>noop</mousemove>
+      <wheeldown>VolumeDown</wheeldown>
+      <wheelup>VolumeUp</wheelup>
+     </mouse>
+  </FullscreenVideo>
+</keymap>

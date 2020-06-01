@@ -7,3 +7,13 @@ Lots of fixes/ additions
 2.5 Public Release 02/19/2019
 7.8 Add p6 server
 8.1 Add .ru domain servers
+16.0 Release 06/01/2020
+      [new]
+      *Merge EPG -Combines Alternate and Provider EPG into a more robust Guide.
+      *PPV selections are available in there own Section.
+      *Ability to see only new VOD and PPV's since your last Update.
+      *Ability to Enable a pre-configured Ext.Player file for MX Player -Android(free version). *This fixes Video playback stuttering for all Videos (Live TV still uses Kodi default player).
+      *Get Quick information for all VOD items.
+      *Play Trailers for all VOD and PPV items.
+      *** Overall quicker and easier to use!
+	  

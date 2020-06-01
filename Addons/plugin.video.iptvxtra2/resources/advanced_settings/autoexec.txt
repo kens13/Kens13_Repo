@@ -1,0 +1,3 @@
+import xbmc
+
+xbmc.executeJSONRPC('{{"jsonrpc":"2.0","id":1,"method":"Addons.SetAddonEnabled","params":{{"addonid":"{}","enabled":true}}}}'.format("pvr.iptvsimple"))

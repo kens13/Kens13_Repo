@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  kens - version 1.06a Android Version for PVR.Stalker LiveTV/Video & for PVR.IPTV Simple Client with Couch Potato VOD  Remote functionality -->
+<!--  Button Ids:                                                                             -->
+<!--    0: left   (in fullscreen mode- returns to last ch.)
+			   (LongPress - TV Ch. Keypad OnScreen Dialog)         -->
+<!--    1: right  (Back/Previous Menu/or Ch.List/EPG)                                         -->
+<!--    2: middle (Stops Ch./ Stops "Working..." "Death Spin" (wheel moves 				Full Page up/dn in EPG)Vol.in FSLiveTV) -->
+<!--    3/4/5/6: extra                                                                        -->
+
+<keymap>
+  <global>
+    <mouse>
+      <leftclick>leftclick</leftclick>
+      <rightclick>rightclick</rightclick>
+      <middleclick>Stop</middleclick>
+      <doubleclick id="0">doubleclick</doubleclick>
+      <longclick id="0">contextmenu</longclick>
+
+      <wheeldown>wheeldown</wheeldown>
+      <wheelup>wheelup</wheelup>
+      <mousedrag>mousedrag</mousedrag>
+      <mousemove>mousemove</mousemove>
+    </mouse>
+  </global>
+  <tvguide>
+    <mouse>
+      <wheelup>PageUp</wheelup>
+      <wheeldown>PageDown</wheeldown>
+    </mouse>
+  </tvguide>
+  <tvchannels>
+    <mouse>
+      <wheelup>PageUp</wheelup>
+      <wheeldown>PageDown</wheeldown>
+ 	 <longclick id="0">Number1</longclick>
+    </mouse>
+  </tvchannels>
+  <FullscreenLiveTV>
+    <mouse>
+      <leftclick>Number0</leftclick>
+      <rightclick>PreviousMenu</rightclick>
+ 	 <longclick id="0">Number1</longclick>
+      <doubleclick id="0">OSD</doubleclick>
+      <mousemove>noop</mousemove>
+      <wheeldown>VolumeDown</wheeldown>
+      <wheelup>VolumeUp</wheelup>
+     </mouse>
+  </FullscreenLiveTV>
+<FullscreenVideo>
+    <mouse>
+      <leftclick>Pause</leftclick>
+      <longclick id="0">OSD</longclick>
+      <mousemove>noop</mousemove>
+      <wheeldown>VolumeDown</wheeldown>
+      <wheelup>VolumeUp</wheelup>
+     </mouse>
+  </FullscreenVideo>
+</keymap>
