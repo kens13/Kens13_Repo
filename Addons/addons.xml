@@ -54,7 +54,7 @@
 
 <addon id="plugin.video.iptvxtra2"
        name="IPTVXtra II"
-       version="16.3"
+       version="16.5"
        provider-name="/kens">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -69,19 +69,19 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">IPTVXtra II - for Kodi v18</summary>
     <language>en</language>
-    <news>ver16.3 (06/16/2020)
+    <news>ver16.5 (06/28/2020)
       [new]
+      *Reworked 1st run startup routine.
+      *Favorite Channel function added.
       *Merge EPG -Combines Alternate and Provider EPG into a more robust Guide.
       *PPV selections are available in there own Section.
       *Ability to see only new VOD and PPV's since your last Update.
-      *Ability to Select VOD List size
-      *Ability to Search VOD
       *Ability to Enable a pre-configured Ext.Player file for MX Player -Android(free version). *This fixes Video playback stuttering for all Videos (Live TV still uses Kodi default player).
       *Get Quick information for all VOD items.
       *Play Trailers for all VOD and PPV items.
       *** Overall quicker and easier to use!
     </news>
-    <description lang="en">Ver 16.3 - The Last Update before the rewrite for Kodi v19, incorporating many of the features of the next version.</description>
+    <description lang="en">Ver 16.5 - The Last Update before the rewrite for Kodi v19, incorporating many of the features of the next version.</description>
      <platform>all</platform>
   </extension>
 </addon>
@@ -135,7 +135,7 @@
 ........<summary lang="gl_ES">Pel Confluence por Jezz_Z. (Pel predefinida do Kodi)</summary>
 ........<summary lang="he_IL">המעטפת Confluence של Jezz_X. (ברירת המחדל של Kodi)</summary>
 ........<summary lang="hr_HR">Confluence presvlaka autora Jezz_X. (uobičajena Kodi presvlaka)</summary>
-........<summary lang="hu_HU">Confluence felszín. Készítő: Jezz_X (Kodi alapértelmezett felszín)</summary>
+........<summary lang="hu_HU">Confluence felszín. Készítő: Jezz_X (Kodi alapértelmezett felszín)</summary>
 ........<summary lang="hy_AM">''Confluence'' - տեսք՝ Jezz_X. կողմից (Kodi - հիմնական տեսք)</summary>
 ........<summary lang="id_ID">Skin Confluence oleh Jezz_X. (Skin bawaan Kodi)</summary>
 ........<summary lang="is_IS">Confluence eftir Jezz_X. (Sjálfgefið útlit Kodi)</summary>
@@ -212,7 +212,7 @@
 ........<description lang="pt_BR">Confluence é a skin padrão do Kodi 9.11 e acima. É uma combinação de conceitos das mais populares skins, visando abraçar e integrar as boas ideias em uma skin  que seja fácil de entender e usar, destinada  aos usuários iniciantes do Kodi. </description>
 ........<description lang="pt_PT">O tema "Confluence" é o tema padrão do Kodi 14.0 e superior. É uma combinação de conceitos a partir de muitos temas populares e tenta integrar as boas ideias dos mesmos, num tema que deverá ser fácil de entender e utilizar pelos novos utilizadores do Kodi.</description>
 ........<description lang="ro_RO">Confluence este costumul implicit pentru Kodi 9.11 și versiunile ulterioare. Este o combinație de concepte împrumutate de la mai multe costume populare, care încearcă să îmbrățișeze și să integreze ideile lor bune într-un costum care să fie ușor de înțeles și folosit de către utilizatorii Kodi începători.</description>
-........<description lang="ru_RU">Confluence — это стандартная обложка Kodi, начиная с версии 9.11. Она представляет собой сочетание концепций, взятых из многих популярных обложек, в попытке интегрировать их удачные идеи в обложке, которая была бы простой для использования и понимания новыми пользователями Kodi.</description>
+........<description lang="ru_RU">Confluence — это стандартная обложка Kodi, начиная с версии 9.11. Она представляет собой сочетание концепций, взятых из многих популярных обложек, в попытке интегрировать их удачные идеи в обложке, которая была бы простой для использования и понимания новыми пользователями Kodi.</description>
 ........<description lang="sk_SK">Confluence je predvolený pre Kodi 9.11 a vyššie. Je kombináciou konceptov z mnoho populárnych skinov a pokusom integrovať ich dobré nápady do skinu, ktorý by bol ľahko zrozumiteľný a použiteľný pre nových používateľov Kodi.</description>
 ........<description lang="sl_SI">Confluence je privzeta preobleka za Kodi 14.0 in novejše. Je kombinacija konceptov mnogih priljubljenih preoblek in poskuša zaobjeti in integrirati njihove dobre ideje v preobleko, ki bi bila preprosta za uporabo in razumevanje tudi novim uporabnikom.</description>
 ........<description lang="sq_AL">Confluence është maska kryesore për Kodi 9.11 dhe verzionet më të lartë. Është nje kombinim nga shumë maska e popullarizuar dhe përpjeket për të përqafuar dhe integruar idetë më të mira në një maskë që të jetë sa më lehtë në përdorim dhe kuptim për përdoruasit duke e përdorur Kodi për herë të parë.</description>
